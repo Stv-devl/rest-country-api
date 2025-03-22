@@ -1,13 +1,18 @@
 import React from 'react';
 
-const SearchIcon = () => {
+/**
+ * The SearchIcon component is a component that displays a search icon
+ * @returns {JSX.Element} The rendered search icon component
+ */
+const SearchIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      width="18"
-      height="18"
+      width={props.width || 18}
+      height={props.height || 18}
       viewBox="0 0 18 18"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={props.className}
     >
       <g id="search">
         <path

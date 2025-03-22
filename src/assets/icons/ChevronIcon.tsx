@@ -1,13 +1,18 @@
 import React from 'react';
 
-const ChevronIcon = () => {
+/**
+ * The ChevronIcon component is a component that displays a chevron icon
+ * @returns {JSX.Element} The rendered chevron icon component
+ */
+const ChevronIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      width="12"
-      height="12"
+      width={props.width || 12}
+      height={props.height || 12}
       viewBox="0 0 12 12"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={props.className}
     >
       <path
         fillRule="evenodd"
