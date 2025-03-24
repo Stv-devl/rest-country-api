@@ -6,7 +6,7 @@ import {
   ApiProviderProps,
   Countries,
   FormattedCountry,
-} from '../type/type';
+} from '../type/apiType';
 import { formatData } from '../helpers/formatDatas';
 
 export const ApiContext = createContext<ApiContextType | undefined>(undefined);

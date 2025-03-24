@@ -8,7 +8,7 @@ import ThemeSwitcher from './ThemeSwitcher';
 
 const Banner = () => {
   return (
-    <div className="flex items-center justify-between h-20 px-4 bg-white dark:bg-gray-700">
+    <div className="flex items-center justify-between h-20 px-4 bg-white dark:bg-gray-700 box-shadow-custom-gray shadow-md">
       <h1 className="font-extrabold text-sm sm:text-2xl ">
         Where in the world
       </h1>

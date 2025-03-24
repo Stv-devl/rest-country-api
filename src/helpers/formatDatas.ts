@@ -1,18 +1,4 @@
-import { Country, FormattedCountry } from '../type/type';
-
-interface formatedCountryProps {
-  border: string[];
-  countryName: string[];
-  nativename: string;
-  capital: string[];
-  currencies: string[];
-  population: string;
-  region: string;
-  subregion: string;
-  flag: string;
-  domain: string;
-  language: string[];
-}
+import { Country, FormattedCountry } from '../type/apiType';
 
 export const formatData = (country: Country): FormattedCountry | undefined => {
   if (!country || Object.keys(country).length === 0) return undefined;
