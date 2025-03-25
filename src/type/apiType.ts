@@ -128,8 +128,8 @@ export interface FormattedCountry {
 
 export interface ApiContextType {
   countryData: FormattedCountry[];
-  loading: boolean;
-  error: Error | null;
+  loading: boolean | undefined;
+  error: Error | null | undefined;
 }
 
 export interface ApiProviderProps {
